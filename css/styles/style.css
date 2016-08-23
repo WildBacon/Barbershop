@@ -1,15 +1,13 @@
 
 body {
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
   min-width: 960px; 
-  background: #000 url("../img/fon.jpg") no-repeat center top;
 }
-
 
 ul {
   padding: 0;
@@ -19,6 +17,28 @@ ul {
 p {
   margin: 0;
 }
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-page-fon {
+  background: #000 url("../img/fon.jpg") no-repeat center top;
+}
+
+.add-page-fon {
+  background: #f3f0ed  url('../img/pattern-index-content.jpg');
+}
+
+/*header*/
 
 .main-header {
   background: #000;
@@ -98,6 +118,10 @@ p {
   background: #242424;
 }
 
+/*end of header*/
+
+
+/*index*/
 .logo {
   width: 368px;
   height: 204px;
@@ -293,6 +317,26 @@ p {
 .appointment-form button {
   width: 100%;
 }
+/*end of index*/
+
+
+/*price*/
+/*end of price*/
+
+
+/*catalog*/
+/*end of catalog*/
+
+
+/*item*/
+/*end of item*/
+
+
+
+
+
+
+/*footer*/
 
 .main-footer {
   background: #222222 url('../img/pattern-footer.jpg');
@@ -380,15 +424,4 @@ p {
   color: #000;
 }
 
-
-.container {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.clearfix {
-  content: "";
-  display: table;
-  clear: both;
-}
+/*end of footer*/

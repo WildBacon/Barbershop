@@ -1,2 +1,3 @@
 # Barbershop
-learning macket
+Учебный макет, позаимствованный у сайта htmlacademy.ru
+

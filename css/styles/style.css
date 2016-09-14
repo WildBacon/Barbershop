@@ -1,4 +1,3 @@
-
 body {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 14px;
@@ -43,7 +42,6 @@ p {
 .main-header {
   background: #000;
   margin-bottom: 60px;
-
 }
 
 .main-navigation {
@@ -82,8 +80,7 @@ p {
 }
 
 .user-block a:hover {
-  background: #242424;
-  
+  background: #242424; 
 }
 
 .main-navigation li {
@@ -122,6 +119,7 @@ p {
 
 
 /*index*/
+
 .logo {
   width: 368px;
   height: 204px;
@@ -139,7 +137,6 @@ p {
   text-align: center;
   padding: 0 10px;
   box-sizing: border-box;
-
 }
 
 .features-title {
@@ -148,7 +145,6 @@ p {
   padding-bottom: 40px;
   position: relative;
   margin-bottom: 35px;
-  
 }
 
 .features-title:after {
@@ -161,8 +157,7 @@ p {
   bottom: 0;
   left: 50%;
   transform: rotate(45deg);
-  margin-left: -10px;
-  
+  margin-left: -10px; 
 }
 
 .features-item:last-child {
@@ -236,6 +231,7 @@ p {
 .btn:hover {
   background: #663d15;
 }
+
 .btn:disabled {
   opacity: 0.5;
   cursor: none;
@@ -289,8 +285,7 @@ p {
 .appointment-form input {
   width: 106px;
   padding: 10px 15px;
-  border: 2px solid #000;
-  
+  border: 2px solid #000; 
   font-size: 14px;
   line-height: 24px;
   font-family: "PT Sans Narrow", sans-serif;
@@ -299,7 +294,6 @@ p {
   color: #000;
   background: #f9f6f3;
   outline: none;
-  
   float: left;
   margin-bottom: 20px;
   margin-right: 20px;
@@ -309,18 +303,18 @@ p {
   margin-right: 0;
 }
 
-.appointment-form input:focus
-{
+.appointment-form input:focus{
   border: 2px solid #663d15;
 }
 
 .appointment-form button {
   width: 100%;
 }
+
 /*end of index*/
 
-
 /*price*/
+
 .pattern-fon {
   color: #000;
   background: #f3f0ed  url('../img/pattern-index-content.jpg');
@@ -352,36 +346,30 @@ p {
 }
 
 .main-title {
-  font-size: 48px;
-  line-height: 42.33px;
+  margin-bottom: 55px;
   text-align: center;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  margin-bottom: 65px;
 }
 
-.main-title:before,
+.main-title h2 {
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  display: inline;
+  position: relative;
+  margin: 0;
+  padding: 0 25px;
+  z-index: 2;
+  background: #f8f3f0 url('../img/pattern-index-content.jpg') repeat;
+}
+
 .main-title:after {
   content: '';
-  display: inline-block;
-  height: 2px;
-  background: #000;
-  width: 100%;
+  display: block;
   position: relative;
-  top: -0.1em;
-  vertical-align: middle;
+  border: 1px solid #000;
+  top: -25px;
+  z-index: 1;
 }
-
-.main-title:before {
-  right: 25px;
-  margin: 0 0 0 -100%;
-}
-.main-title:after {
-  left: 25px;
-  margin: 0 -100% 0 0;
-}
-
 
 .content-block-top-left {
   float: left; 
@@ -432,8 +420,6 @@ p {
   transform: rotate(45deg);
 }
 
-
-
 .content-title-top-right {
   float: right;
   width: 460px;
@@ -444,12 +430,10 @@ p {
   margin-bottom: 36px;
 }
 
-/*table-block*/
-
+/*TABLE-BLOCK*/
 table {
   width: 460px;
   border-collapse: collapse;
-
 }
 
 tr {
@@ -464,10 +448,7 @@ td {
 .td-price{
   text-align: center;
 }
-
-/*end of table-block*/
-
-
+/*END OF TABLE-BLOCK*/
 
 .content-title-bottom {
   margin-bottom: 75px;
@@ -480,12 +461,10 @@ td {
   line-height: 42.33px;
 }
 
-
 .left-column-block {
   float: left; 
   width: 380px;
   margin-right: 100px;
-  
 }
 
 .right-column-block {
@@ -495,9 +474,7 @@ td {
 
 /*end of price*/
 
-
 /*catalog*/
-
 
 .main-content-title {
   font-size: 30px;
@@ -617,8 +594,6 @@ input[type="radio"]:disabled + label {
   margin-bottom: 50px;
 }
 
-
-
 .trade-group-block {
   width: 700px;
   float: right;
@@ -649,6 +624,10 @@ input[type="radio"]:disabled + label {
   margin-bottom: 15px;
 }
 
+.img-block a {
+  text-decoration: none;
+  color: #000;
+}
 
 .content-title-catalog {
   font-size: 14px;
@@ -670,6 +649,7 @@ input[type="radio"]:disabled + label {
   text-align: center;
   font-size: 0;
 }
+
 .pay-btn,
 .price {
   display: inline-block;
@@ -687,7 +667,6 @@ input[type="radio"]:disabled + label {
 
 .pay-btn {
   width: 78px;
-  
   background: #000;
 }
 
@@ -734,18 +713,13 @@ input[type="radio"]:disabled + label {
   padding: 13px 20px;
 }
 
-
-
 .page:hover {
   background: #663d15;
 }
 
-
 /*end of catalog*/
 
-
 /*item*/
-
 
 .bread-crumps {
   margin-left: 5px;
@@ -769,14 +743,13 @@ input[type="radio"]:disabled + label {
 .crump-symbol:after {
   content:'';
   width: 6px;
-  height: 6px ;
+  height: 6px;
   background: #000;
   display: inline-block; 
   position: relative;
   top: -0.11em;
   left: 14px;
   transform: rotate(45deg)
-
 }
 
 .bread-crumps-item a {
@@ -784,6 +757,9 @@ input[type="radio"]:disabled + label {
   color: #000;
 }
 
+.active-bread {
+  opacity: 0.5;
+}
 
 .item-gallery-block {
   width: 460px; 
@@ -810,7 +786,6 @@ input[type="radio"]:disabled + label {
 
 .image:last-child {
   margin-right: 0px;
-  
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -833,7 +808,6 @@ input[type="radio"]:disabled + label {
 }
 
 .item-name {
-
   margin: 0 0 30px 0;
 }
 
@@ -859,6 +833,9 @@ input[type="radio"]:disabled + label {
   background: #000;
 }
 
+.buy-btn:hover {
+  background: #663d15;
+}
 
 .buy-btn a {
   text-decoration: none;
@@ -901,7 +878,6 @@ input[type="radio"]:disabled + label {
 .content-item-list {
   padding-left: 20px;
   position: relative;
-  
 }
 
 .content-item-list:before {
@@ -916,13 +892,7 @@ input[type="radio"]:disabled + label {
   left: 0.2em;
 }
 
-
 /*end of item*/
-
-
-
-
-
 
 /*footer*/
 
@@ -976,19 +946,18 @@ input[type="radio"]:disabled + label {
   background: #000;
 }
 
-
 .footer-copyright a{
   margin: 0;
 }
   
 .social-btn-vk {
-  background: #000 url('../img/vk-icon.png') no-repeat center;
-  
+  background: #000 url('../img/vk-icon.png') no-repeat center;  
 }
+
 .social-btn-fb {
   background: #000 url('../img/f-icon.png') no-repeat center;
-  
 }
+
 .social-btn-inst {
   background: #000 url('../img/i-icon.png') no-repeat center;
   margin-right: 0;
@@ -996,11 +965,10 @@ input[type="radio"]:disabled + label {
 
 .social-btn-vk:hover {
   background: #fff url('../img/vk-icon-reverse.png') no-repeat center;
-  
 }
+
 .social-btn-fb:hover {
   background: #fff url('../img/f-icon-reverse.png') no-repeat center;
-  
 }
 .social-btn-inst:hover {
   background: #fff url('../img/i-icon-reverse.png') no-repeat center;
@@ -1014,3 +982,99 @@ input[type="radio"]:disabled + label {
 }
 
 /*end of footer*/
+
+/*modal-content*
+
+.modal-content {
+  width: 300px;
+  padding: 50px 80px;
+  margin-left: -230px;
+  margin-top: 150px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: #f8f3f0 url('../img/pattern-index-content.jpg') repeat;
+  color: #000;
+  box-shadow: 0 30px 50px rgba(0,0,0,.7);
+}
+
+.modal-content-close {
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: url('../img/close-symbol(png-8).png') no-repeat;
+  top: 0px;
+  right: -50px;
+  z-index: 5;
+  cursor: pointer;
+  opacity: .4;
+}
+
+.modal-content-close:hover {
+  opacity: .8;
+}
+
+.modal-header {
+  font-size: 30px;
+  line-height: 42.33px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+
+.login-form input[type="text"] {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 300px;
+  padding: 10px 40px 10px 15px;
+  position: relative;
+  
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", sans-serif;
+  
+  border: 2px solid #000;
+  box-sizing: border-box;
+  outline: none;
+  background: #f9f6f3;
+}
+
+
+.login-form input[type="password"] {
+  margin-bottom: 15px;
+}
+
+.login-form input:focus {
+border-color: #663d15;
+}
+
+.login-form input.icon-login {
+  background: url(../img/user-icon-modal-form.png) no-repeat 270px;
+}
+
+.login-form input.icon-password {
+  background: url(../img/locket-icon-modal-form.png) no-repeat 270px;
+}
+
+.login-form input[type="checkbox"] + label {
+  padding-left: 32px;
+  margin-bottom: 15px;
+}
+
+.forgot-password {
+  color: #000;
+  float: right;
+}
+
+.enter-btn{
+  width: 300px;
+}
+
+/*end of modal-content*/

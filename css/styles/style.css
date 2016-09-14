@@ -1,5 +1,5 @@
 body {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -156,6 +156,8 @@ p {
   display: block;
   bottom: 0;
   left: 50%;
+  -webkit-transform: rotate(45deg); 
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   margin-left: -10px; 
 }
@@ -342,6 +344,8 @@ p {
   position: absolute;
   top: 25% ;
   left: 140% ;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -417,6 +421,8 @@ p {
   width: 6px;
   height: 6px;
   background: #000;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -749,7 +755,9 @@ input[type="radio"]:disabled + label {
   position: relative;
   top: -0.11em;
   left: 14px;
-  transform: rotate(45deg)
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .bread-crumps-item a {
@@ -887,6 +895,8 @@ input[type="radio"]:disabled + label {
   background: #000;
   display: block; 
   position: absolute;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 0.6em;
   left: 0.2em;
@@ -983,13 +993,14 @@ input[type="radio"]:disabled + label {
 
 /*end of footer*/
 
-/*modal-content*
+/*modal-content*/
 
 .modal-content {
   width: 300px;
   padding: 50px 80px;
   margin-left: -230px;
   margin-top: 150px;
+  display: none;
   position: absolute;
   top: 0;
   left: 50%;

@@ -153,7 +153,20 @@
         </form>
     </div>
     
-    <div class="modal-content-map">
-    </div>
+  
+    <script>
+      var link = document.querySelector(".login");
+      var popup = document.querySelector(".modal-content");
+      
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        console.log("LOGIN BUTTON CLICK");
+        popup.classList.add("modal-content-show");
+      
+      
+      });
+      
+    </script>
+    
   </body>
 </html>

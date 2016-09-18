@@ -1022,6 +1022,10 @@ input[type="radio"]:disabled + label {
   opacity: .4;
 }
 
+.modal-content-show {
+  display: block;
+}
+
 .modal-content-close:hover {
   opacity: .8;
 }

@@ -143,9 +143,9 @@
         <h3 class="modal-header">Личный кабинет</h3>
         <p>Введите пожалуйста свой логин и пароль</p>
           
-        <form class="login-form" name="login" action="/echo" method="post">
-          <input type="text" class="icon-login" name="login" placeholder="Логин" required>
-          <input type="password" class="icon-password" name="password" placeholder="Пароль" required>
+        <form class="login-form" action="/echo" method="post">
+          <input type="text" class="icon-login" name="login" placeholder="Логин">
+          <input type="password" class="icon-password" name="password" placeholder="Пароль">
           <input type="checkbox" name="remember" id="remember-me">
           <label for="remember-me">Запомните меня</label>
           <a href="#" class="forgot-password">Я забыл пароль</a>
@@ -153,18 +153,59 @@
         </form>
     </div>
     
+    <div class="map-block">
+      <div class="map-close">Закрыть</div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.53657510086!2d30.312371015921332!3d59.939831681876626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74e032aa0505dfc!2z0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INCt0YDQvNC40YLQsNC2!5e0!3m2!1sru!2sru!4v1476179909576" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
   
     <script>
       var link = document.querySelector(".login");
       var popup = document.querySelector(".modal-content");
+      var close = document.querySelector(".modal-content-close");
+      var login = popup.querySelector("[name=login]");
+      var form = popup.querySelector("form");
+      var password = popup.querySelector("[name=password]");
+      var storage = localStorage.getItem("login");
       
       link.addEventListener("click", function(event) {
         event.preventDefault();
-        console.log("LOGIN BUTTON CLICK");
         popup.classList.add("modal-content-show");
-      
-      
+        
+        if (storage) {
+          login.value = storage;
+          password.focus();
+        } else {
+          login.focus();
+        }
       });
+      
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        
+      });
+      
+      
+      form.addEventListener("submit", function(event) {
+        if (!(login.value && password.value)) {
+          event.preventDefault();
+          console.log("User didn't fill fields");
+          popup.classList.add("modal-error");
+        } else {
+          localStorage.setItem("login", login.value);
+        }
+      });
+      
+      window.addEventListener("keydown", function(event){
+        if (event.keyCode == 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+          }
+        }
+      });
+      
       
     </script>
     
